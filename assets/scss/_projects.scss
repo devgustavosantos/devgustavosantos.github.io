@@ -1,11 +1,4 @@
 .projects {
-    margin-top: 4rem;
-
-    h2 {
-        font-size: 5.6rem;
-        line-height: 5rem;
-    }
-
     .project {
         margin-top: 4rem;
     }
@@ -43,29 +36,8 @@
         font-size: 1.6rem;
         line-height: 1.6rem;
         border-radius: 9999px;
-        background-color: rgb(0, 0, 0);
         color: $color-a;
         padding: 0.8rem 1.6rem;
-    }
-
-    .bg-js {
-        @include background-tech($tech-color-js);
-    }
-
-    .bg-node {
-        @include background-tech($tech-color-node);
-    }
-
-    .bg-css {
-        @include background-tech($tech-color-css);
-    }
-
-    .bg-html {
-        @include background-tech($tech-color-html);
-    }
-
-    .bg-git {
-        @include background-tech($tech-color-git);
     }
 
     .project-thumbnail {

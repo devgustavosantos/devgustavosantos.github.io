@@ -1,0 +1,97 @@
+.about {
+    .about-top {
+        position: relative;
+        max-width: 22.7rem;
+
+        img {
+            position: absolute;
+            z-index: -1;
+            width: 85%;
+            bottom: -15px;
+            left: -4px;
+        }
+    }
+
+    & > img {
+        width: 70%;
+        display: block;
+        margin: 3.2rem auto;
+    }
+
+    .about-info {
+        display: flex;
+        align-items: stretch;
+        gap: 1.2rem;
+
+        line-height: 2.2rem;
+
+        div:empty {
+            width: 2rem;
+            background-color: $text-color;
+            border-radius: 9999px;
+        }
+
+        p:not(:first-child) {
+            margin-top: 1rem;
+        }
+    }
+
+    .skill {
+        margin-top: 3.2rem;
+
+        h3 {
+            font-size: 3.6rem;
+        }
+
+        .tech-skills {
+            text-align: center;
+
+            display: grid;
+            grid-template-areas:
+                "A B C"
+                "D E F";
+            justify-content: space-between;
+        }
+
+        .container-tech {
+            width: 8.4rem;
+        }
+
+        .tech-symbol {
+            @extend .centralize-x-y;
+            height: 8.4rem;
+            border-radius: 2rem;
+
+            svg {
+                height: 80%;
+                path {
+                    fill: $color-a;
+                }
+            }
+        }
+
+        p {
+            margin: 1.6rem auto;
+        }
+
+        .html-symbol {
+            background-color: $tech-color-html;
+        }
+
+        .css-symbol {
+            background-color: $tech-color-css;
+        }
+
+        .js-symbol {
+            background-color: $tech-color-js;
+        }
+
+        .git-symbol {
+            background-color: $tech-color-git;
+        }
+
+        .node-symbol {
+            background-color: $tech-color-node;
+        }
+    }
+}

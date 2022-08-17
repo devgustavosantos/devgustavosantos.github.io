@@ -13,7 +13,7 @@ body {
     background-color: $color-a;
     padding: 2.4rem;
     max-width: 100vw;
-    border: 1px solid rgb(3, 0, 0);
+    // border: 1px solid rgb(3, 0, 0);
 
     &::-webkit-scrollbar {
         width: 1.3rem;
@@ -32,6 +32,15 @@ body {
 
 body * {
     font-family: $primary-font;
+}
+
+h2 {
+    font-size: 5.6rem;
+    line-height: 5rem;
+}
+
+section {
+    margin-top: 4rem;
 }
 
 button {
@@ -62,4 +71,37 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bg-html {
+    background-color: $tech-color-html;
+}
+
+.bg-css {
+    background-color: $tech-color-css;
+}
+
+.bg-js {
+    background-color: $tech-color-js;
+}
+
+.bg-git {
+    background-color: $tech-color-git;
+}
+
+.bg-node {
+    background-color: $tech-color-node;
+}
+
+.bg-sqlite {
+    background-color: $tech-color-sqlite;
+}
+
+.bg-figma,
+.bg-express {
+    background-color: $text-color;
+}
+
+.bg-knex {
+    background-color: $tech-color-knex;
 }
