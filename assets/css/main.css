@@ -11,7 +11,6 @@
 body {
   font-size: 1.6rem;
   background-color: #ffffff;
-  padding: 2.4rem;
   max-width: 100vw;
 }
 body::-webkit-scrollbar {
@@ -31,13 +30,20 @@ body * {
   font-family: "Poppins", sans-serif;
 }
 
+header,
+main,
+footer {
+  padding: 2.4rem;
+}
+
+section,
+footer {
+  margin-top: 4rem;
+}
+
 h2 {
   font-size: 5.6rem;
   line-height: 5rem;
-}
-
-section {
-  margin-top: 4rem;
 }
 
 button {
@@ -56,13 +62,13 @@ a:visited {
   color: inherit;
 }
 
-.centralize-x-y, .about .skill .tech-symbol, .projects .project-thumbnail, .introduction .container-avatar {
+.centralize-x-y, footer .social-media, .about .skill .tech-symbol, .projects .project-thumbnail, .introduction .container-avatar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.stacking, .introduction {
+.stacking, footer .footer-bottom, .introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +296,7 @@ header div h1 {
   text-align: center;
   display: grid;
   grid-template-areas: "A B C" "D E F";
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .about .skill .container-tech {
   width: 8.4rem;
@@ -308,18 +314,65 @@ header div h1 {
 .about .skill p {
   margin: 1.6rem auto;
 }
-.about .skill .html-symbol {
-  background-color: #e44d26;
+.about .skill .bg-html {
+  box-shadow: 0 15px 10px -10px #e44d26;
 }
-.about .skill .css-symbol {
-  background-color: #1572b6;
+.about .skill .bg-css {
+  box-shadow: 0 15px 10px -10px #1572b6;
 }
-.about .skill .js-symbol {
-  background-color: #f0db4f;
+.about .skill .bg-js {
+  box-shadow: 0 15px 10px -10px #f0db4f;
 }
-.about .skill .git-symbol {
-  background-color: #f34f29;
+.about .skill .bg-git {
+  box-shadow: 0 15px 10px -10px #f34f29;
 }
-.about .skill .node-symbol {
-  background-color: #83cd29;
+.about .skill .bg-node {
+  box-shadow: 0 15px 10px -10px #83cd29;
+}
+.about .skill .bg-sqlite {
+  box-shadow: 0 15px 10px -10px #3497d9;
+}
+
+footer {
+  background-color: #111827;
+}
+footer * {
+  color: #ffffff;
+}
+footer h2 {
+  font-weight: 500;
+  line-height: 6rem;
+}
+footer p {
+  margin-top: 0.8rem;
+}
+footer > p + p {
+  margin-top: 3.2rem;
+}
+footer .social-media-container {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+footer .social-media {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+footer svg {
+  width: 80%;
+}
+footer svg path {
+  fill: #111827;
+}
+footer .footer-bottom {
+  margin: 13rem auto 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+footer .footer-bottom p + p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }/*# sourceMappingURL=main.css.map */

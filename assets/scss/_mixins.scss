@@ -1,3 +1,7 @@
 @mixin background-tech($color) {
     background-color: $color;
 }
+
+@mixin shadows-of-techs($color) {
+    box-shadow: 0 15px 10px -10px $color;
+}

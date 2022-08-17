@@ -50,7 +50,7 @@
             grid-template-areas:
                 "A B C"
                 "D E F";
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         .container-tech {
@@ -74,24 +74,28 @@
             margin: 1.6rem auto;
         }
 
-        .html-symbol {
-            background-color: $tech-color-html;
+        .bg-html {
+            @include shadows-of-techs($tech-color-html);
         }
 
-        .css-symbol {
-            background-color: $tech-color-css;
+        .bg-css {
+            @include shadows-of-techs($tech-color-css);
         }
 
-        .js-symbol {
-            background-color: $tech-color-js;
+        .bg-js {
+            @include shadows-of-techs($tech-color-js);
         }
 
-        .git-symbol {
-            background-color: $tech-color-git;
+        .bg-git {
+            @include shadows-of-techs($tech-color-git);
         }
 
-        .node-symbol {
-            background-color: $tech-color-node;
+        .bg-node {
+            @include shadows-of-techs($tech-color-node);
+        }
+
+        .bg-sqlite {
+            @include shadows-of-techs($tech-color-sqlite);
         }
     }
 }

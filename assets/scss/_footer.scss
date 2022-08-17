@@ -1,0 +1,56 @@
+footer {
+    background-color: $color-f;
+
+    & * {
+        color: $color-a;
+    }
+
+    h2 {
+        font-weight: 500;
+        line-height: 6rem;
+    }
+
+    p {
+        margin-top: 0.8rem;
+    }
+
+    > p + p {
+        margin-top: 3.2rem;
+    }
+
+    .social-media-container {
+        margin-top: 3.2rem;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .social-media {
+        @extend .centralize-x-y;
+        width: 4.8rem;
+        height: 4.8rem;
+        background-color: $color-a;
+        border-radius: 8px;
+    }
+
+    svg {
+        width: 80%;
+
+        path {
+            fill: $color-f;
+        }
+    }
+
+    .footer-bottom {
+        @extend .stacking;
+        margin: 13rem auto 0;
+
+        font-size: 1.2rem;
+        text-align: center;
+
+        p + p {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+    }
+}
