@@ -3,10 +3,18 @@
         margin-top: 4rem;
     }
 
+    .container-name-project {
+        width: calc(100% - 1rem);
+    }
+
     h3 {
         font-size: 3.2rem;
         line-height: 3.8rem;
         font-weight: 500;
+
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .technologies-used {
@@ -73,5 +81,9 @@
         & *:hover {
             cursor: pointer;
         }
+    }
+
+    .desktop-buttons {
+        display: none;
     }
 }

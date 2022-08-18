@@ -41,6 +41,10 @@ footer {
         }
     }
 
+    #banner {
+        display: none;
+    }
+
     .footer-bottom {
         @extend .stacking;
         margin: 13rem auto 0;

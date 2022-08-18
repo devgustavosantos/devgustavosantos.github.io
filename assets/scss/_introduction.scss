@@ -14,8 +14,9 @@
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
-        background-color: #ffffff64;
+        background-color: $color-a;
         overflow: hidden;
+        box-shadow: 0 0 20px -10px #808080;
 
         img {
             width: 100%;
@@ -44,28 +45,30 @@
                 position: absolute;
                 left: 0;
                 bottom: -1px;
+                width: 100%;
             }
         }
     }
 
     .intro-links {
-        width: 100%;
+        max-width: 53rem;
         margin-top: 4.2rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        gap: 1rem;
+        flex-wrap: wrap;
+        gap: 0.9rem;
 
-        & * {
-            display: block;
-        }
+        // & * {
+        //     display: block;
+        // }
 
-        & a {
+        a {
             font-size: 1.4rem;
             line-height: 2.1rem;
         }
 
-        & > a:first-child {
+        > a:first-child {
             padding: 0.8rem 3.6rem;
             background-color: $text-color;
             color: $color-a;
@@ -73,11 +76,16 @@
         }
 
         span {
+            min-width: 14rem;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
             gap: 0.4rem;
+
+            a {
+                border-bottom: 2px solid $text-color;
+            }
         }
     }
 }

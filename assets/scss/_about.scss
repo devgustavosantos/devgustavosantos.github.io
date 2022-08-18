@@ -1,7 +1,7 @@
 .about {
     .about-top {
         position: relative;
-        max-width: 22.7rem;
+        max-width: min(33rem, 56vw);
 
         img {
             position: absolute;
@@ -12,20 +12,22 @@
         }
     }
 
-    & > img {
-        width: 70%;
-        display: block;
-        margin: 3.2rem auto;
+    .container-about-info {
+        img {
+            width: 70%;
+            display: block;
+            margin: 3.2rem auto;
+        }
     }
 
-    .about-info {
+    .about-content {
         display: flex;
         align-items: stretch;
         gap: 1.2rem;
 
         line-height: 2.2rem;
 
-        div:empty {
+        div:nth-child(1) {
             width: 2rem;
             background-color: $text-color;
             border-radius: 9999px;
@@ -44,13 +46,15 @@
         }
 
         .tech-skills {
+            margin-top: 2rem;
+
             text-align: center;
 
             display: grid;
             grid-template-areas:
                 "A B C"
                 "D E F";
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
 
         .container-tech {

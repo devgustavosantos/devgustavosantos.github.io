@@ -44,7 +44,9 @@ footer {
 
 h2 {
   font-size: 5.6rem;
+  font-weight: 500;
   line-height: 5rem;
+  max-width: 30rem;
 }
 
 button {
@@ -152,6 +154,7 @@ header div:empty {
   right: 15px;
   transform: rotate(45deg);
   box-shadow: -2px -2px 5px -4px black;
+  border-radius: 5px;
 }
 header ul {
   text-align: center;
@@ -180,8 +183,9 @@ header ul li:nth-child(3) a {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3921568627);
+  background-color: #ffffff;
   overflow: hidden;
+  box-shadow: 0 0 20px -10px #808080;
 }
 .introduction .container-avatar img {
   width: 100%;
@@ -208,17 +212,16 @@ header ul li:nth-child(3) a {
   position: absolute;
   left: 0;
   bottom: -1px;
+  width: 100%;
 }
 .introduction .intro-links {
-  width: 100%;
+  max-width: 53rem;
   margin-top: 4.2rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 1rem;
-}
-.introduction .intro-links * {
-  display: block;
+  flex-wrap: wrap;
+  gap: 0.9rem;
 }
 .introduction .intro-links a {
   font-size: 1.4rem;
@@ -231,20 +234,30 @@ header ul li:nth-child(3) a {
   border-radius: 9999px;
 }
 .introduction .intro-links span {
+  min-width: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.4rem;
 }
+.introduction .intro-links span a {
+  border-bottom: 2px solid #111827;
+}
 
 .projects .project {
   margin-top: 4rem;
+}
+.projects .container-name-project {
+  width: calc(100% - 1rem);
 }
 .projects h3 {
   font-size: 3.2rem;
   line-height: 3.8rem;
   font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .projects .technologies-used {
   margin-top: 1.2rem;
@@ -302,10 +315,13 @@ header ul li:nth-child(3) a {
 .projects .show-more *:hover {
   cursor: pointer;
 }
+.projects .desktop-buttons {
+  display: none;
+}
 
 .about .about-top {
   position: relative;
-  max-width: 22.7rem;
+  max-width: min(33rem, 56vw);
 }
 .about .about-top img {
   position: absolute;
@@ -314,23 +330,23 @@ header ul li:nth-child(3) a {
   bottom: -15px;
   left: -4px;
 }
-.about > img {
+.about .container-about-info img {
   width: 70%;
   display: block;
   margin: 3.2rem auto;
 }
-.about .about-info {
+.about .about-content {
   display: flex;
   align-items: stretch;
   gap: 1.2rem;
   line-height: 2.2rem;
 }
-.about .about-info div:empty {
+.about .about-content div:nth-child(1) {
   width: 2rem;
   background-color: #111827;
   border-radius: 9999px;
 }
-.about .about-info p:not(:first-child) {
+.about .about-content p:not(:first-child) {
   margin-top: 1rem;
 }
 .about .skill {
@@ -340,10 +356,11 @@ header ul li:nth-child(3) a {
   font-size: 3.6rem;
 }
 .about .skill .tech-skills {
+  margin-top: 2rem;
   text-align: center;
   display: grid;
   grid-template-areas: "A B C" "D E F";
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .about .skill .container-tech {
   width: 8.4rem;
@@ -414,6 +431,9 @@ footer svg {
 footer svg path {
   fill: #111827;
 }
+footer #banner {
+  display: none;
+}
 footer .footer-bottom {
   margin: 13rem auto 0;
   font-size: 1.2rem;
@@ -423,4 +443,122 @@ footer .footer-bottom p + p {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+
+@media (min-width: 769px) {
+  header,
+main,
+footer {
+    padding: 0;
+  }
+  h2 {
+    font-size: 9rem;
+    font-weight: 500;
+    line-height: 8rem;
+  }
+  .container-page {
+    max-width: 970px;
+    margin: auto;
+    padding: 0 3rem;
+  }
+  .introduction .container-avatar {
+    width: 18rem;
+    height: 18rem;
+  }
+  .introduction p:nth-child(2) {
+    font-size: 4.4rem;
+    line-height: 6rem;
+  }
+  .introduction p:nth-child(3) {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .introduction .intro-links {
+    gap: 4.5rem;
+  }
+  .introduction .intro-links a {
+    font-size: 2rem;
+  }
+  .projects h2 {
+    margin-top: 8rem;
+  }
+  .projects .container-projects {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .projects .project {
+    max-width: 32%;
+    height: 45rem;
+  }
+  .projects .project-thumbnail {
+    height: 60%;
+  }
+  .projects .show-more {
+    display: none;
+  }
+  .projects .desktop-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  .projects .desktop-buttons img:hover {
+    cursor: pointer;
+  }
+  .projects .desktop-buttons img:nth-child(1) {
+    transform: scaleX(-1);
+  }
+  .about .container-about-info {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-areas: "A B" "C B";
+  }
+  .about .container-about-info > *:nth-child(1) {
+    grid-area: B;
+    align-self: center;
+    width: 100%;
+  }
+  .about .container-about-info > *:nth-child(2) {
+    grid-area: A;
+  }
+  .about .container-about-info > *:nth-child(3) {
+    grid-area: C;
+  }
+  footer {
+    padding: 8rem 0 3.5rem;
+  }
+  footer .container-footer-infos {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+  }
+  footer h2 {
+    max-width: initial;
+    line-height: 10rem;
+  }
+  footer .container-banner {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+  footer #banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  footer .footer-bottom {
+    font-size: 1.6rem;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .footer-bottom p:nth-child(2) {
+    border-left: 1px solid;
+    margin-left: 0.5rem;
+    padding-left: 0.7rem;
+  }
 }/*# sourceMappingURL=main.css.map */
