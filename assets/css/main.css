@@ -445,7 +445,7 @@ footer .footer-bottom p + p {
   gap: 0.8rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 600px) {
   header,
 main,
 footer {
@@ -466,18 +466,20 @@ footer {
     height: 18rem;
   }
   .introduction p:nth-child(2) {
-    font-size: 4.4rem;
+    font-size: clamp(2rem, 2rem + 2vw, 4.4rem);
     line-height: 6rem;
   }
   .introduction p:nth-child(3) {
     font-size: 6rem;
     line-height: 6rem;
+    font-size: clamp(3rem, 3rem + 2vw, 6rem);
+    line-height: clamp(3rem, 4rem + 2vw, 7rem);
   }
   .introduction .intro-links {
     gap: 4.5rem;
   }
   .introduction .intro-links a {
-    font-size: 2rem;
+    font-size: clamp(1rem, 1rem + 50%, 2rem);
   }
   .projects h2 {
     margin-top: 8rem;
@@ -485,11 +487,12 @@ footer {
   .projects .container-projects {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
     max-width: 100%;
     overflow: hidden;
   }
   .projects .project {
-    max-width: 32%;
+    max-width: 48%;
     height: 45rem;
   }
   .projects .project-thumbnail {
@@ -509,23 +512,6 @@ footer {
   .projects .desktop-buttons img:nth-child(1) {
     transform: scaleX(-1);
   }
-  .about .container-about-info {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    grid-template-areas: "A B" "C B";
-  }
-  .about .container-about-info > *:nth-child(1) {
-    grid-area: B;
-    align-self: center;
-    width: 100%;
-  }
-  .about .container-about-info > *:nth-child(2) {
-    grid-area: A;
-  }
-  .about .container-about-info > *:nth-child(3) {
-    grid-area: C;
-  }
   footer {
     padding: 8rem 0 3.5rem;
   }
@@ -543,13 +529,6 @@ footer {
     overflow: hidden;
     border-radius: 2rem;
   }
-  footer #banner {
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   footer .footer-bottom {
     font-size: 1.6rem;
     font-weight: 500;
@@ -560,5 +539,38 @@ footer {
     border-left: 1px solid;
     margin-left: 0.5rem;
     padding-left: 0.7rem;
+  }
+}
+@media (min-width: 800px) {
+  .projects .container-projects {
+    gap: 0;
+  }
+  .projects .project {
+    max-width: 32%;
+    height: 45rem;
+  }
+  .about .container-about-info {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-areas: "A B" "C B";
+  }
+  .about .container-about-info > *:nth-child(1) {
+    grid-area: B;
+    align-self: center;
+    width: 100%;
+  }
+  .about .container-about-info > *:nth-child(2) {
+    grid-area: A;
+  }
+  .about .container-about-info > *:nth-child(3) {
+    grid-area: C;
+  }
+  footer #banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=main.css.map */
