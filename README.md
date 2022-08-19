@@ -1,47 +1,56 @@
-# Olá, Mundo! Eu sou o Gustavo😎
-<img align="right" alt="Gustavo-gif" height="300" src="https://c.tenor.com/rkY5QA5c3VAAAAAC/gato-digitando.gif"/>
+# :technologist: Meu Portfólio
 
-- 🎉Versão 2.5
-- 👨‍🎓Formado em ADS e estudando para me tornar no Dev Fullstack.
-- 💻O melhor código é aquele que a manutenção é fácil.
- 
- 
+Esse repositório é responsável por hospedar meu portfólio .
 
-## Aprendendo nesse momento:
+<h1 align="center">
+    <img src="./assets/images/preview/cover.jpg" alt="Capa do projeto">
+</h1>
 
-- [X] HTML
-- [X] CSS
-- [X] Javascript
-- [X] Git
-- [ ] NodeJS
-- [ ] React
+## :open_book: Sumário
 
- 
+-   [Pré-Visualização](#clapper-pré-visualização)
+-   [Aviso](#loudspeaker-aviso)
+-   [Sobre](#memo-sobre)
+-   [Tecnologias](#floppy_disk-tecnologias)
+-   [Autor](#nerd_face-autor)
 
-## Tecnologias que eu gostaria de trabalhar
-<div>
-    <img alt="Gustavo-html" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-    <img alt="Gustavo-css" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-    <img alt="Gustavo-js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-    <img alt="Gustavo-git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-    <img alt="Gustavo-nodejs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-    <img alt="Gustavo-react" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-</div>
- 
- 
+</br>
 
-## Fale comigo em:
-<div style="max-width: 100%; margin: 0 auto;">
-  <a href="https://www.linkedin.com/in/devgustavosantos/" target="_blank"><img alt="Gustavo-linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /> </a>
-  <a href="mailto:devgustavosantos@gmail.com" target="_blank"><img alt="Gustavo-gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /> </a>
-  <a href="https://discord.com/channels/940492484197367838/940492484197367840" target="_blank"><img alt="Gustavo-discord" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"/> </a>
-</div>
- 
- 
+## :clapper: Pré-Visualização
 
-## Github Status
-<div>
-  <a href="https://github.com/devgustavosantos">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=devgustavosantos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=devgustavosantos&layout=compact&langs_count=7&theme=dark"/>
-</div>
+<h1 align="center">
+    <img src="./assets/images/preview/preview-mobile.gif" alt="gif da versão mobile">
+</h1>
+
+<h1 align="center">
+    <img src="./assets/images/preview/preview-desktop.gif" alt="gif da versão desktop">
+</h1>
+
+</br>
+
+## :loudspeaker: Aviso
+
+-   Agradecimentos especiais á Rafael Jr, que fez o layout, e você pode encontra-lo [clicando aqui!](https://www.figma.com/community/file/1126581136185110141)
+
+</br>
+
+## :memo: Sobre
+
+Este projeto é apenas um página simples que apresenta alguns dos meus projetos que fiz, e nessa página resolvi utilizar o pré-processador SASS para treinar alguns conceitos.
+
+Você pode visitar a página [clicando aqui!](https://devgustavosantos.github.io/)
+
+</br>
+
+## :floppy_disk: Tecnologias
+
+-   **HTML** - utilizado para fazer a marcação do conteúdo;
+-   **SASS** - utilizado para gerar o CSS;
+-   **JS** - usado para fazer toda a lógica da interatividade;
+-   **Git** - responsável por realizar o versionamento do código.
+
+</br>
+
+## :nerd_face: Autor
+
+Feito com :heart: por Dev Gustavo Santos :grinning: Veja meu [LinkedIn.](https://www.linkedin.com/in/devgustavosantos/)
