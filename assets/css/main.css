@@ -484,19 +484,37 @@ footer {
   .projects h2 {
     margin-top: 8rem;
   }
+  .projects .container-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
   .projects .container-projects {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    max-width: 100%;
-    overflow: hidden;
+    overflow-x: scroll;
+    padding: 2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .projects .container-projects::-webkit-scrollbar {
+    display: none;
   }
   .projects .project {
     max-width: 48%;
     height: 45rem;
+    flex-shrink: 0;
+    transition: all ease 0.6s;
   }
   .projects .project-thumbnail {
     height: 60%;
+    opacity: 0.5;
+    transition: all ease 0.6s;
+  }
+  .projects .project-thumbnail.current-project {
+    opacity: 1;
   }
   .projects .show-more {
     display: none;
@@ -543,7 +561,7 @@ footer {
 }
 @media (min-width: 800px) {
   .projects .container-projects {
-    gap: 0;
+    gap: 1rem;
   }
   .projects .project {
     max-width: 32%;

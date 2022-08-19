@@ -49,23 +49,49 @@
             margin-top: 8rem;
         }
 
+        .container-slider {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+
+            // -ms-overflow-style: none;
+            // scrollbar-width: none;
+            // &::-webkit-scrollbar {
+            //     display: none;
+            // }
+        }
+
         .container-projects {
+            position: relative;
             display: flex;
             justify-content: space-between;
             gap: 2rem;
-            max-width: 100%;
-            overflow: hidden;
+
+            overflow-x: scroll;
+            padding: 2rem;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
 
         .project {
             max-width: 48%;
             height: 45rem;
+            flex-shrink: 0;
+            transition: all ease 0.6s;
         }
 
         .project-thumbnail {
             height: 60%;
+            opacity: 0.5;
+            transition: all ease 0.6s;
         }
 
+        .project-thumbnail.current-project {
+            opacity: 1;
+        }
         .show-more {
             display: none;
         }
@@ -123,7 +149,7 @@
 @media (min-width: 800px) {
     .projects {
         .container-projects {
-            gap: 0;
+            gap: 1rem;
         }
 
         .project {
