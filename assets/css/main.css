@@ -118,6 +118,10 @@ li {
   background-color: #d65f24;
 }
 
+.bg-react {
+  background-color: #61dafb;
+}
+
 header {
   display: flex;
   gap: 2rem;
@@ -378,23 +382,23 @@ header ul li:nth-child(3) a {
 .about .skill p {
   margin: 1.6rem auto;
 }
-.about .skill .bg-html {
-  box-shadow: 0 15px 10px -10px #e44d26;
-}
-.about .skill .bg-css {
-  box-shadow: 0 15px 10px -10px #1572b6;
-}
-.about .skill .bg-js {
-  box-shadow: 0 15px 10px -10px #f0db4f;
-}
-.about .skill .bg-git {
-  box-shadow: 0 15px 10px -10px #f34f29;
+.about .skill .bg-react {
+  box-shadow: 0 15px 10px -10px #61dafb;
 }
 .about .skill .bg-node {
   box-shadow: 0 15px 10px -10px #83cd29;
 }
+.about .skill .bg-css {
+  box-shadow: 0 15px 10px -10px #1572b6;
+}
 .about .skill .bg-sqlite {
   box-shadow: 0 15px 10px -10px #3497d9;
+}
+.about .skill .bg-git {
+  box-shadow: 0 15px 10px -10px #f34f29;
+}
+.about .skill .bg-figma {
+  box-shadow: 0 15px 10px -10px #111827;
 }
 
 footer {
