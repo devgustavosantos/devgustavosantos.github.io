@@ -15,6 +15,18 @@ const DOM = {
   },
 }
 
+function setLoadingState(isLoading) {
+  const container = DOM.select('.container')
+  if (!container) return
+
+  if (isLoading) {
+    container.classList.add('loading')
+    return
+  }
+
+  container.classList.remove('loading')
+}
+
 function updatePageMetadata(pageData) {
   if (!pageData) return
 
@@ -114,6 +126,8 @@ async function loadLinkTreeData() {
   } catch (error) {
     console.error('>>> Error loading data from API:', error)
     console.log('>>> Keeping default page content')
+  } finally {
+    setLoadingState(false)
   }
 }
 
